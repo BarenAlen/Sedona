@@ -1,0 +1,152 @@
+.jumbotrone {
+	padding: 47px 0 48px;
+	text-align: center;
+	background-color: #99c2dc;
+	background-image: linear-gradient(to top right, #fff 50%, rgba(255,255,255,0) 50%), 
+	                  linear-gradient(to top left, #fff 50%, rgba(255,255,255,0) 50%),
+	                  url('../img/photo-background@1x.jpg');
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-position: left bottom, right bottom, center -90px;
+	background-size: 50% 26px, 50% 26px, 1200px 800px;
+	text-align: center;
+	@media (min-resolution: 1.5dppx) {
+		background-image: linear-gradient(to top right, #fff 50%, rgba(255,255,255,0) 50%), 
+	                      linear-gradient(to top left, #fff 50%, rgba(255,255,255,0) 50%),
+		                  url('../img/photo-background@2x.jpg');
+	}
+	&__welcome-wrap {
+		margin: 0 auto;
+		margin-bottom: 10px;
+		svg {
+			width: 144px;
+			height: 34.5px;
+		}
+		.svg-fallback {
+			font-size: 40px;
+			font-weight: bold;
+			line-height: 34.5px;
+			color: @light-blue;
+			margin: 0;
+		}
+	}
+
+	&__gorgeous-wrap {
+		margin: 0 auto;
+		margin-bottom: 59px;
+		svg {
+			width: 196px;
+			height: 22.2px;
+		}
+		.svg-fallback {
+			font-size: 22px;
+			line-height: 22px;
+			font-style: italic;
+			color: #766357;
+			margin: 0;
+		}
+	}
+
+	&__sedona-wrap {
+		margin: 0 auto;
+		margin-bottom: 68px;
+		svg {
+			width: 280px;
+			height: 48.6px;	
+		}
+		.svg-fallback {
+			font-size: 68px;
+			font-weight: bold;
+			line-height: 49px;
+			color: #fff;
+			margin: 0;
+		}
+		
+	}
+
+	&__because-wrap {
+		margin: 0 auto;
+		svg {
+			width: 196px;
+			height: 53px;
+		}
+		.svg-fallback {
+			font-size: 24px;
+			line-height: 26px;
+			color: #fff;
+			font-style: italic;
+			margin: 0;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		padding: 76px 0 85px;
+		background-image: linear-gradient(to top right, #fff 50%, rgba(255,255,255,0) 50%), 
+	                      linear-gradient(to top left, #fff 50%, rgba(255,255,255,0) 50%),
+	                      linear-gradient(to top right, #fff 50%, rgba(255,255,255,0) 50%), 
+	                      linear-gradient(to top left, #fff 50%, rgba(255,255,255,0) 50%),
+	                      url('../img/photo-background@1x.jpg');
+	    background-repeat: no-repeat, no-repeat, no-repeat;
+	    background-position: left bottom, right bottom, 33.3% bottom, 66.5% bottom, center -85px;
+	    background-size: 50% 37px,
+	    				 50% 37px, 
+	    				 25% 37px, 
+	    				 25% 37px, 
+	    				 1200px 800px;
+		&__welcome-wrap {
+			svg {
+				width: 190px;
+				height: 45.5px;
+			}
+			.svg-fallback {
+				font-size: 52px;
+				line-height: 45px;
+			}
+		}
+		&__gorgeous-wrap {
+			margin-bottom: 50px;
+			svg {
+				width: 256px;
+				height: 29px;
+			}
+			.svg-fallback {
+				font-size: 26px;
+				line-height: 29px;
+			}
+
+		}
+		&__sedona-wrap {
+			margin-bottom: 56px;
+			svg {
+				width: 458px;
+				height: 79.5px;
+			}
+			.svg-fallback {
+				font-size: 104px;
+				line-height: 79px;
+			}
+		}
+		&__because-wrap {
+			svg {
+				width: 295px;
+				height: 79.7px;
+			}
+			.svg-fallback {
+				font-size: 28px;
+				line-height: 40px;
+			}
+		}
+	}
+
+	@media screen and (min-width: 1280px) {
+		background-image: linear-gradient(to top right, #fff 50%, rgba(255,255,255,0) 50.5%), 
+	                      linear-gradient(to top left, #fff 50%, rgba(255,255,255,0) 50.5%),
+	                      linear-gradient(to top right, #fff 50%, rgba(255,255,255,0) 50.5%), 
+	                      linear-gradient(to top left, #fff 50%, rgba(255,255,255,0) 50.5%),
+	                      url('../img/photo-background@2x.jpg');
+		background-size: 50% 57px,
+	    				 50% 57px, 
+	    				 25% 57px, 
+	    				 25% 57px, 
+	    				 cover;
+	}
+}

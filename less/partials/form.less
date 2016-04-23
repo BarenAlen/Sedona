@@ -1,0 +1,151 @@
+.form {
+	padding: 30px 0;
+	font-size: 0;
+	.clearfix;
+	&__label {
+		font-size: 14px;
+		font-weight: bold;
+		display: inline-block;
+		vertical-align: middle;
+		line-height: 38px;
+		margin-left: 15px;
+	}
+
+	&__input {
+		box-sizing: border-box;
+		width: 100%;
+		display: table-cell;
+		vertical-align: middle;
+		padding: 10px 0;
+		padding-left: 15px;
+		font-size: 14px;
+		font-weight: bold;
+		font-family: inherit;
+		text-transform: uppercase;
+		background: #f2f2f2;
+		border: none;
+		outline: none;
+
+		&:hover {
+			background: #ebebeb;
+		}
+
+		&:focus {
+			outline: 2px solid #ebebeb;
+			background: #fff;
+		}
+
+		&--number {
+			padding-left: 0;
+			text-align: center;
+		}
+	}
+
+	&__btn {
+		border: none;
+		outline: none;
+		width: 100%;
+		font-family: inherit;
+		font-size: 21px;
+		font-weight: bold;
+		color: #fff;
+		background: @light-blue;
+		line-height: 26px;
+		padding: 15px 0;
+		margin-top: 20px;
+		text-decoration: none;
+		&:hover {
+			background: darken(@light-blue, 5%);
+			cursor: pointer;
+		}
+
+		&:active {
+			background: darken(@light-blue, 10%);
+			color: rgba(255, 255, 255, 0.5);
+		}
+	}
+
+	&__input-addon {
+		width: 1%;
+		padding: 0 10px;
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		font-size: 26px;
+		font-weight: bold;
+		line-height: 26px;
+		background: #f2f2f2;
+		color: #c2c2c2;
+		user-select: none;
+		text-decoration: none;
+		& > svg {
+			fill: #c2c2c2;
+		}
+		&:hover {
+			cursor: pointer;
+			color: #333;
+		}
+		&:hover > svg {
+			fill: #333;
+		}
+
+		&:active {
+			color: @light-blue;
+		}
+		&:active > svg {
+			fill: @light-blue;
+		}
+	}
+
+	&__group {
+		margin-bottom: 15px;
+	}
+
+	&__input-group {
+		display: table;
+		position: relative;
+
+		&--small {
+			width: 116px;
+		}
+	}
+
+	&__col-left, &__col-right {
+		width: 116px;
+		display: inline-block;
+	}
+
+	&__col-left {
+		float: left;
+	}
+
+	&__col-right {
+		float: right;
+	}
+
+	@media screen and (min-width: 768px) {
+		padding: 55px 0;
+		&__col-right {
+			width: 40%;
+		}
+
+		&__col-left {
+			width: 49.7%;
+		}
+		
+		&__group {
+			.clearfix;
+			margin-bottom: 30px;
+		}
+
+		&__label {
+			float: left;
+			margin: 0;
+		}
+
+		&__input-group {
+			float: right;
+			max-width: 346px;
+		}
+	}
+}
