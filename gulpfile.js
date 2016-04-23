@@ -51,6 +51,6 @@ gulp.task('combineMQ', function() {
 		  .pipe(gulp.dest('public/css'));
 });
 
-gulp.task('build', gulp.series('clean', gulp.parallel('styles')));
+gulp.task('build', gulp.series('clean', gulp.parallel('styles'), 'combineMQ'));
 
 gulp.task('dev', gulp.series('build', gulp.parallel('watch', 'serve')));
